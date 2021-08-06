@@ -1,0 +1,26 @@
+{
+  "name": "@edvilme/animated-web-components",
+  "version": "1.0.0",
+  "description": "Use Web Components to easily create animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edvilme/animated-web-components.git"
+  },
+  "keywords": [
+    "dom",
+    "effects",
+    "javascript",
+    "random",
+    "web components"
+  ],
+  "author": "edvilme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edvilme/animated-web-components/issues"
+  },
+  "homepage": "https://github.com/edvilme/animated-web-components#readme"
+}
