@@ -32,6 +32,7 @@ class FloatingRandomThing extends HTMLElement {
         style.href = __currentDirectory+"/floating-random-thing.css";
         this.shadowRoot.append(style)
         let children = document.createElement('slot');
+        this.content = children.firstChild
         this.shadowRoot.append(children);
         // Conditions
         // If auto enabled, enable interval

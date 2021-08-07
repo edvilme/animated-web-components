@@ -1,6 +1,6 @@
 {
-  "name": "@edvilme/animated-web-components",
-  "version": "1.0.1b",
+  "name": "animated-web-components",
+  "version": "1.0.1c",
   "description": "Use Web Components to easily create animations",
   "main": "index.js",
   "scripts": {
