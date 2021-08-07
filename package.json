@@ -1,6 +1,6 @@
 {
   "name": "@edvilme/animated-web-components",
-  "version": "1.0.1a",
+  "version": "1.0.1b",
   "description": "Use Web Components to easily create animations",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/edvilme/animated-web-components/issues"
   },
-  "homepage": "https://github.com/edvilme/animated-web-components#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "homepage": "https://github.com/edvilme/animated-web-components#readme"
 }

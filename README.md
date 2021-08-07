@@ -22,6 +22,8 @@ If you prerfer, you can use [https://unpkg.com]
 <script src="://unpkg.com/animated-web-components/index.js" type="module">
 ```
 
+> Important! The script is to be executed as a **module** regardless of the installation
+
 ## Usage
 
 ### Floating Random Thing
