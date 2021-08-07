@@ -105,9 +105,9 @@ class FloatingRandomThing extends HTMLElement {
         for(let attr of FloatingRandomThing.observedAttributes){
             cloned.setAttribute(attr, this.getAttribute(attr))
         }
-        this.dispatchEvent( new CustomEvent('clone', {detail: cloned}) )
         // Append to parent
         this.parentElement.append(cloned)
+        this.dispatchEvent( new CustomEvent('clone', {detail: cloned}) )
     }
 
 }
