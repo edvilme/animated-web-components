@@ -1,3 +1,5 @@
+const __currentDirectory = import.meta.url.substring(0, import.meta.url.lastIndexOf('/'));
+
 class FloatingRandomThing extends HTMLElement {
     // Get observed properties
     static get observedAttributes(){
@@ -27,7 +29,7 @@ class FloatingRandomThing extends HTMLElement {
         this.shadowRoot.innerHTML = "";
         const style = document.createElement('link');
         style.rel = "stylesheet";
-        style.href = "./floating-random-thing.css";
+        style.href = __currentDirectory+"/floating-random-thing.css";
         this.shadowRoot.append(style)
         let children = document.createElement('slot');
         this.shadowRoot.append(children);
