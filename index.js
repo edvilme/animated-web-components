@@ -1,1 +1,1 @@
-import "./floating-random-thing.js"
+import "./floating-random.js"

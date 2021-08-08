@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            height: 100vh;
-            width: 100vw;
-        }
         section{
-            position: relative;
-            margin: 24px;
+            background-color: red;
             height: 200px;
-            width: 200px;
-            background: red;
+            width: 200px
         }
     </style>
+    <script src="./floating-random.js" type="module"></script>
+
 </head>
 <body>
-
     <section>
-        <floating-random-thing animation-range="20" animation-duration="100" duplicates="true" auto="true">
-            <p>Hello</p>
-        </floating-random-thing>
+        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
+        <!-- <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element> -->
     </section>
-
-    <script src="./index.js" type="module"></script>
     <script>
-        document.querySelector('floating-random-thing').addEventListener('clone', e=>{
-            console.log(e.detail)
+       window.addEventListener('load', ()=>{
+            document.querySelector('floating-random-element').addClonableEventListener('click', e=>{
+                console.log('item')
+            })
         })
     </script>
 </body>
