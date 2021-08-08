@@ -24,7 +24,7 @@ class FloatingRandomElement extends AnimationElement {
             }
         `;
         this.shadowRoot.append(style);
-        this.shadowRoot.append('Hello World!');
+        this.shadowRoot.append(document.createElement('slot'));
 
         this.addEventListener('click', ()=>{
             if(this.getAttribute('clonable') != 'false') this.cloneNode()
