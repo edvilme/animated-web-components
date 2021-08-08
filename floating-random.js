@@ -23,7 +23,7 @@ class FloatingRandomElement extends AnimationElement {
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                transition: ${this.animationDuration/1000}s linear;
+                transition: ${this.animationSpeed/1000}s linear;
             }
         `;
         this.shadowRoot.append(style);
@@ -66,6 +66,9 @@ class FloatingRandomElement extends AnimationElement {
         this.dispatchEvent(new CustomEvent('clone', {
             detail: {node: clone, content: clone.shadowRoot.querySelector('slot').assignedElements()[0]}
         }))
+    }
+    reset(){
+        
     }
 }
 

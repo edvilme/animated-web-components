@@ -12,28 +12,30 @@
             width: 200px
         }
     </style>
-    <script src="./floating-random.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
 
 </head>
 <body>
     <section>
-        <floating-random-element animation-duration="0.25" animation-enabled="true" >
+        <floating-random-element animation-speed="0.25" animation-enabled="true" >
             <div style="position: relative;">
                 <div style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;"></div>
                 <p>aaa</p>
             </div>
         </floating-random-element>
-        <!-- <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element>
-        <floating-random-element animation-duration="0.35" animation-enabled="true" ></floating-random-element> -->
+    </section>
+    <section>
+        <typing-element animation-speed="0.1" animation-enabled="true">
+            <div>
+                <h1>Hello!</h1>
+                <strong>People</strong>
+                <ul>
+                    <li>Hello</li>
+                    <li>I am </li>
+                    <li>A list</li>
+                </ul>
+            </div>
+        </typing-element>
     </section>
     <script>
        window.addEventListener('load', ()=>{
