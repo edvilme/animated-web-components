@@ -9,6 +9,9 @@ class FloatingRandomElement extends AnimationElement {
         super();
         this.attachShadow({mode: 'open'})
     }
+    get travelRadius(){
+        return parseInt(this.getAttribute('travel-radius')) || 10;
+    }
     connectedCallback(){
         this.render()
     }
@@ -35,7 +38,7 @@ class FloatingRandomElement extends AnimationElement {
         // console.log("Hi")
         const o_x = parseFloat( this.style.left ) || 0;
         const o_y = parseFloat( this.style.top ) || 0;
-        const radius = 10;
+        const radius = this.travelRadius;
         let angle, x, y;
         do {
             angle = Math.random()*2*Math.PI;
