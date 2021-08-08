@@ -23,7 +23,7 @@ class FloatingRandomElement extends AnimationElement {
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                transition: ${this.animationSpeed/1000}s linear;
+                transition: ${Math.random()*this.animationSpeed/1000}s ease-in-out;
             }
         `;
         this.shadowRoot.append(style);
@@ -68,7 +68,7 @@ class FloatingRandomElement extends AnimationElement {
         }))
     }
     reset(){
-        
+
     }
 }
 
