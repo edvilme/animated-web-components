@@ -17,7 +17,9 @@
 </head>
 <body>
     <section>
-        <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
+        <floating-random-element animation-duration="0.25" animation-enabled="true" >
+            Hola ANa
+        </floating-random-element>
         <!-- <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
         <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
         <floating-random-element animation-duration="0.25" animation-enabled="true" ></floating-random-element>
@@ -32,8 +34,8 @@
     </section>
     <script>
        window.addEventListener('load', ()=>{
-            document.querySelector('floating-random-element').addClonableEventListener('click', e=>{
-                console.log('item')
+            document.querySelector('floating-random-element').addClonableEventListener('clone', e=>{
+                console.log(e.detail)
             })
         })
     </script>
