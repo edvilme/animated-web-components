@@ -54,7 +54,7 @@ class FloatingRandomElement extends AnimationElement {
     }
     cloneNode(){
         this.dispatchEvent(new CustomEvent('clone', {
-            detail: {node: this, content: this.shadowRoot.querySelector('slot').assignedNodes()[0]}
+            detail: {node: this, content: this.shadowRoot.querySelector('slot').assignedElements()[0]}
         }))
         let clone = super.cloneNode(true);
         for(let event in this.#eventListeners){

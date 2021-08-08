@@ -1,6 +1,6 @@
 {
   "name": "animated-web-components",
-  "version": "1.0.3",
+  "version": "1.0.3a",
   "description": "Use Web Components to easily create animations",
   "main": "index.js",
   "scripts": {
