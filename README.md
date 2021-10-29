@@ -98,6 +98,6 @@ Rich HTML can also be used to display complex content:
 3. Submit Pull Request with comprehensive description of changes
 
 ## Contributors
-Eduardo Villalpando Mello (Author) [edvilme](https://github.com/edvilme)
-Anthony E. Alvarez [anthonyalvarez](https://github.com/anthonyalvarez)
-Jitesh Jayaraman [jiteshj2](https://github.com/jiteshj2)
+Eduardo Villalpando Mello (Author) [edvilme](https://github.com/edvilme)<br>
+Anthony E. Alvarez [anthonyalvarez](https://github.com/anthonyalvarez)<br>
+Jitesh Jayaraman [jiteshj2](https://github.com/jiteshj2)<br>
