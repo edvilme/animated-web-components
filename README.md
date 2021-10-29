@@ -1,26 +1,43 @@
+![Animated Web Components](img/Animated_Web_Components.png)
 # Animated Web Components
 
 Content on the web is increasingly _less static_. However adding even simple animations can be repetitive and verbose. This library uses Web Components to provide animations to objects inside a page. Still in development, more will be added soon.
 
-## Getting started
+## How To Use
+To clone and run this, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
 
-### Using NPM
 
-In you project root
+### Clone this repository
 ```bash
-npm install animated-web-components
+$ git clone https://github.com/edvilme/animated-web-components.git
 ```
 
-Then load the content in your html file
+### Go into the repository
+```bash
+$ cd animated-web-components
+```
+
+### Install dependencies
+```bash
+$ npm install animated-web-components
+```
+![NPM Install](img/npm-install.png)
+
+### Load NPM module in your HTML File
 ```html
 <script src="./node_modules/animated-web-components/index.js" type="module">
 ```
+![HTML Script Tage](img/HTML-Script-Tag.png)
 
-### Using CDN
-If you prerfer, you can use [https://unpkg.com]
+
+
+### Using a Content Delivery Network (CDN)
+If you prerfer, you can use [Unpkg.com](https://unpkg.com)
 ```html
 <script src="://unpkg.com/animated-web-components/index.js" type="module">
 ```
+
+![Unpkg Tag](img/Uppkg-tag.png)
 
 > Important! The script is to be executed as a **module** regardless of the installation
 
@@ -35,6 +52,7 @@ Use this tag to make its content float around its parent. Can be set to duplicat
     </floating-random-thing>
 </section>
 ```
+![Web-Component-tag](img/web-component-tag.png)
 
 ### Typing element
 Use this tag to make a text content appear as if it were being typed.
@@ -44,7 +62,10 @@ Use this tag to make a text content appear as if it were being typed.
         <p>Hello World!</p>
     </typing-element>
 </section>
+
 ```
+![Typing](img/typing-tag.png)
+
 Rich HTML can also be used to display complex content:
 ```html
 <section>
@@ -60,4 +81,18 @@ Rich HTML can also be used to display complex content:
     </typing-element>
 </section>
 ```
+
+![Typeing2](img/typing-tag2.png)
+
+
+## Notes
+
 > Important! Remember that all children must be wrapped in a **single** tag.
+
+## How to Contribute
+1. Clone repo and create a new branch: 
+   ```bash
+   $ git checkout https://github.com/edvilme/animated-web-components.git -b name_for_new_branch
+   ```
+2. Make changes and test
+3. Submit Pull Request with comprehensive description of changes
