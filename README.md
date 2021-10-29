@@ -96,3 +96,8 @@ Rich HTML can also be used to display complex content:
    ```
 2. Make changes and test
 3. Submit Pull Request with comprehensive description of changes
+
+## Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
