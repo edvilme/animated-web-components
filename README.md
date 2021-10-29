@@ -100,4 +100,21 @@ Rich HTML can also be used to display complex content:
 ## Contributors
 
 <!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/edvilme">
+            <img src="https://avatars.githubusercontent.com/u/5952839?v=4" width="100;" alt="edvilme"/>
+            <br />
+            <sub><b>Eduardo Villalpando Mello</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/anthonyalvarez">
+            <img src="https://avatars.githubusercontent.com/u/1598435?v=4" width="100;" alt="anthonyalvarez"/>
+            <br />
+            <sub><b>Anthony E. Alvarez</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors -end -->
