@@ -36,12 +36,6 @@ class TypingElement extends AnimationElement{
     get text(){
         return this.#slot.assignedElements()[0].innerHTML;
     }
-
-    /** 
-     * Creates a TypingElement object
-     * @property {function} constructor
-     * @returns {object} New TypingElement Object
-     */
     constructor(){
         super();
         this.attachShadow({mode: 'open'});
@@ -93,7 +87,6 @@ class TypingElement extends AnimationElement{
      * Resets TypingElement object
      * @property {function} reset
      * @member {Object}
-     * @returns {number} Amount of Typed Letters in object
      */
     reset(){
         this.typedLetters = parseInt(this.getAttribute('typed-letters')) || 0;
