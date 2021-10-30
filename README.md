@@ -1,4 +1,10 @@
 ![Animated Web Components](img/Animated_Web_Components.png)
+
+![Last Commit](https://img.shields.io/github/last-commit/edvilme/animated-web-components)
+
+![Contributors](https://img.shields.io/github/contributors/edvilme/animated-web-components)
+
+
 # Animated Web Components
 
 Content on the web is increasingly _less static_. However adding even simple animations can be repetitive and verbose. This library uses Web Components to provide animations to objects inside a page. Still in development, more will be added soon.
@@ -96,3 +102,7 @@ Rich HTML can also be used to display complex content:
    ```
 2. Make changes and test
 3. Submit Pull Request with comprehensive description of changes
+
+## License
+
+>    GPL-3.0
