@@ -10,7 +10,7 @@ Accepting responsibility and apologizing to those affected by our mistakes, and 
 Focusing on what is best not just for us as individuals, but for the overall community
 Examples of unacceptable behavior include
 
-##Solve an issue
+## Solve an issue
 
 All contributors who publish a PR will be added to the Contributors section of the README. Thanks @Smollet777
 Looking into existing documentation and issues before attempting to propose a new feature.
