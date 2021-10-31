@@ -16,4 +16,4 @@ Examples of unacceptable behavior include
 - Looking into existing documentation and issues before attempting to propose a new feature.
 - Breaking changes are allowed but they must be discussed first. Will add a section in the Discussions tab.
 - Any type of suggestion (changing variable names, refactoring for efficiency, community stuff is greatly appreciated).
-- Feel free to add the standard rules as well.
+
