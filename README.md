@@ -120,6 +120,13 @@ Rich HTML can also be used to display complex content:
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/izhar360">
+            <img src="https://avatars.githubusercontent.com/u/79567009?v=4" width="100;" alt="izhar360"/>
+            <br />
+            <sub><b>Muhammad Izhar</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/jiteshj2">
             <img src="https://avatars.githubusercontent.com/u/15423087?v=4" width="100;" alt="jiteshj2"/>
             <br />
