@@ -1,5 +1,10 @@
 import AnimationElement from "./animation-element.js";
 
+/**
+ * @class 
+ * @classdesc Create a Floating Random Element
+ * 
+ */
 class FloatingRandomElement extends AnimationElement {
     /**
      * @type {Object<String, Array<Function>>}
@@ -15,6 +20,15 @@ class FloatingRandomElement extends AnimationElement {
     connectedCallback(){
         this.render()
     }
+
+    /**
+     * Gets a random point at a given distance. 
+     * Done using a parametric circle function given an angle.
+     * @property {function} render
+     * @member {Object} FloatingRandomElement
+     * @returns {void} Prints out FloatingRandomElement object
+     * 
+     */
     render(){
         this.shadowRoot.innerHTML = ""
         const style = document.createElement('style');
@@ -34,10 +48,37 @@ class FloatingRandomElement extends AnimationElement {
         })
 
     }
+
+    /**
+     * @description Animates FloatingRandomElement object
+     * @property {function} animate
+     * @member {Object} FloatingRandomElement
+     * @returns {Object<number>} Angle, X and Y
+     * 
+     */
     animate(){
         // console.log("Hi")
+        /**
+         * Original x position of the element
+         * @const
+         * @type {number} 
+         * 
+         */
         const o_x = parseFloat( this.style.left ) || 0;
+        /**
+         * Original y position of the element
+         * @const
+         * @type {number} 
+         * 
+         */
         const o_y = parseFloat( this.style.top ) || 0;
+        
+        /**
+         * Radius
+         * @const
+         * @type {number} 
+         * 
+         */
         const radius = this.travelRadius;
         let angle, x, y;
         do {
