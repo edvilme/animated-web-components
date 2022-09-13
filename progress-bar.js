@@ -1,9 +1,7 @@
 import AnimationElement from "./animation-element.js";
 
 class ProgressBar extends AnimationElement {
-  /**
-   * @type {string}
-   */
+  
   #parent;
   #bar;
   #progress = 1;
@@ -55,23 +53,18 @@ class ProgressBar extends AnimationElement {
             content: "";
             position: absolute;
             top: 0;
-            left: 0px;
+            left: -90%;
             bottom: 0;
             right: 0;
-            background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 37%)
-            background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 37%);    
-            background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 37%);
-            background-image: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 37%);
-            
-            -moz-background-size: 20px 50px;
-       background-size: 20px 50px;
-       background-repeat: no-repeat;
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(99%,rgba(255,255,255,0)), color-stop(100%,rgba(125,185,232,0)));
+            width:100%;
+            background-repeat: no-repeat;
             z-index: 1;
-           
-            animation: slide 2s linear infinite;
+            transform: skewX(-25deg);
+            animation: slide 8s ease-in 4s infinite;
           }
             
-           }
+           
            @keyframes move {
             0% {
               background-position: 0 0;
@@ -82,12 +75,18 @@ class ProgressBar extends AnimationElement {
           }
 
           @keyframes slide {
-            0% {
-              left: 0;
+            0%, 20% ,60%{
+              opacity:1;
+              left: -90%;
+             
             }
+           
+            
             100% {
-              left:100%;
+              opacity:0;
+              left:45%;
             }
+            
           }
         `;
     this.shadowRoot.append(style);
@@ -98,35 +97,33 @@ class ProgressBar extends AnimationElement {
       parseInt(this.getAttribute("width")) || this.#barWidth
     }px`;
 
-    let type = this.getAttribute("type");
+    let variant = this.getAttribute("variant");
 
-    if (type === "shiny") {
+    if (variant === "shiny") {
       this.#parent.classList.add("shiny");
     }
-    if (type === "candystriped") {
+    if (variant === "candystriped") {
       this.#parent.classList.add("candystriped");
     }
 
     this.#parent.style.height = "20px";
-    this.#parent.style.border = "1px solid black";
     this.#parent.style.position = "relative";
     this.#parent.style.borderRadius = "20px";
     this.#parent.style.overflow = "hidden";
+    this.#parent.style.backgroundColor= "#F5F5F5";
+    this.#parent.style.boxShadow="inset 0 2px 9px rgb(245 245 245 / 60%), inset 0 -2px 9px rgb(0 0 0 / 10%)";
 
     this.#bar.style.position = "absolute";
     this.#bar.style.width = "0%";
     this.#bar.style.top = "0px";
     this.#bar.style.left = "-20px";
     this.#bar.style.height = "100%";
-
+    this.#bar.style.transition= `${this.animationSpeed/1000 + 0.2*Math.random()}s linear`;
+   
     this.#bar.style.backgroundColor =
       this.getAttribute("progress-color") || this.#defaultProgressColor;
-    this.#bar.style.borderTopLeftRadius = "inherit";
-    this.#bar.style.borderBottomLeftRadius = "inherit";
-    this.#bar.style.transform = "skewX(-35deg)";
-    this.#bar.style.transition = "width 2s linear";
-    this.#bar;
-
+    this.#bar.style.borderRadius = "inherit";
+   
     this.#parent.append(this.#bar);
     this.shadowRoot.append(this.#parent);
   }
