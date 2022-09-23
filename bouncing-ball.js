@@ -5,22 +5,17 @@ class BouncingBallElement extends AnimationElement {
      * @type {Object<String, Array<Function>>}
      */
     #eventListeners = {}
-    constructor(inityvelocity=0, styleoptions = {}){
+    constructor(){
         super();
         this.attachShadow({mode: 'open'})
         this.yvelocity = 0
         this.timeelapsed = 0;
         console.log("Parent element height: ");
         console.log(this.parentElement.offsetHeight )
-        // add default ball styling
-        this.style.backgroundColor = styleoptions.color || 'blue'
-        this.style.borderRadius = '999px'
-        this.style.width = '40px'
-        /*
-        border-radius: 999px;
-        height: 200px;
-        width: 200px;
-        align-items: center;*/
+        // add ball styling from HTML
+        this.backgroundColor = this.getAttribute('color') || null;
+        this.radius = this.getAttribute('radius') || null;
+        
     }
     get velocity() {
         return this.yvelocity;
@@ -46,6 +41,10 @@ class BouncingBallElement extends AnimationElement {
                 top: 0px;
                 left: 0px;
                 transition: ${this.animationSpeed/1000}s linear;
+                background-color: ${this.backgroundColor || 'blue'};
+                border-radius: 999px;
+                width: ${(this.radius * 2) || 40 }px;
+                height: ${(this.radius * 2) || 40 }px;
             }
         `;
         this.shadowRoot.append(style);
@@ -80,20 +79,13 @@ class BouncingBallElement extends AnimationElement {
          * 
          */
         const o_y = parseFloat( this.style.top ) || 0;
-        /**
-         * Calculate new velocity
-         */
+        
         const gravity = 10;
         let x, y;
         x = o_x;
-        y = o_y + this.yvelocity;
         this.yvelocity += gravity;
+        y = o_y + this.yvelocity;
         const angle = 0;
-        
-        console.log("new position (x,y): ")
-        console.log(x,y);
-        console.log("yvelocity: ");
-        console.log(this.yvelocity);
         if(y === this.parentElement.offsetHeight) {
             this.yvelocity *= -1;
         }
@@ -108,19 +100,6 @@ class BouncingBallElement extends AnimationElement {
             this.yvelocity = gravity * bouncetime;
             this.yvelocity *= -1;
         }
-        /*
-        do {
-            x = o_x + 0;
-            y = o_y + this.yvelocity;
-            console.log("neew position: ")
-            console.log(x,y);
-            console.log("yvelocity: ");
-            console.log(this.yvelocity);
-            if(y == this.parentElement.offsetHeight || y == 0 ) {
-                this.yvelocity = -1;
-            }
-        } while (x > this.parentElement.offsetWidth || y > this.parentElement.offsetHeight || x < 0 || y <= 0);
-        */
         this.style.left = x + 'px';
         this.style.top = y + 'px';
         return {angle, x, y};

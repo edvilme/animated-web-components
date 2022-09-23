@@ -53,9 +53,9 @@ If you prerfer, you can use [Unpkg.com](https://unpkg.com)
 Use this tag to create a bouncing ball that will bounce forever.
 ```html
 <section>
-    <bouncing-ball gravity="10">
+    <bouncing-ball color="green" radius="20" animation-speed="0.1" animation-enabled="true">
         <div>
-            <h1>Placeholder</h1>
+            
         </div>
     </bouncing-ball>
 </section>
