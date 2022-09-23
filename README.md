@@ -49,6 +49,18 @@ If you prerfer, you can use [Unpkg.com](https://unpkg.com)
 
 ## Usage
 
+### Bouncing Ball
+Use this tag to create a bouncing ball that will bounce forever.
+```html
+<section>
+    <bouncing-ball gravity="10">
+        <div>
+            <h1>Placeholder</h1>
+        </div>
+    </bouncing-ball>
+</section>
+```
+
 ### Floating Random Thing
 Use this tag to make its content float around its parent. Can be set to duplicate on click
 ```html

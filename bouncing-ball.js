@@ -90,30 +90,23 @@ class BouncingBallElement extends AnimationElement {
         this.yvelocity += gravity;
         const angle = 0;
         
-        console.log("neew position (x,y): ")
+        console.log("new position (x,y): ")
         console.log(x,y);
         console.log("yvelocity: ");
         console.log(this.yvelocity);
         if(y === this.parentElement.offsetHeight) {
-            console.log("Bound reached. ");
-            console.log("New y velocity: ")
             this.yvelocity *= -1;
-            console.log(this.yvelocity);
         }
         // collision detection
         else if(y > this.parentElement.offsetHeight ) {
             const ydelta = y - this.parentElement.offsetHeight;
+            // calculate time when ball bounces at parentElement offset height.
             let bouncetime = Math.sqrt(this.parentElement.offsetHeight * 2 / gravity);
-            console.log("Bounce time:");
-            console.log(bouncetime);
+            // set real y to offset height
             y = this.parentElement.offsetHeight;
+            // set velocity to what it would be at the offsetheight, then make it go the reverse direction.
             this.yvelocity = gravity * bouncetime;
-
-
-            console.log("Bound reached. ");
-            console.log("New y velocity: ")
             this.yvelocity *= -1;
-            console.log(this.yvelocity);
         }
         /*
         do {
