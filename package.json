@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/edvilme/animated-web-components/issues"
   },
-  "homepage": "https://github.com/edvilme/animated-web-components#readme"
+  "homepage": "https://github.com/edvilme/animated-web-components#readme",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
 }
