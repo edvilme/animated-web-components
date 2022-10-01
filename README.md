@@ -49,6 +49,18 @@ If you prerfer, you can use [Unpkg.com](https://unpkg.com)
 
 ## Usage
 
+### Bouncing Ball
+Use this tag to create a bouncing ball that will bounce forever.
+```html
+<section>
+    <bouncing-ball color="green" radius="20" animation-speed="0.1" animation-enabled="true">
+        <div>
+            
+        </div>
+    </bouncing-ball>
+</section>
+```
+
 ### Floating Random Thing
 Use this tag to make its content float around its parent. Can be set to duplicate on click
 ```html
@@ -138,6 +150,13 @@ Rich HTML can also be used to display complex content:
             <img src="https://avatars.githubusercontent.com/u/15423087?v=4" width="100;" alt="jiteshj2"/>
             <br />
             <sub><b>Jiteshj2</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/jasmine-9000">
+            <img src="https://avatars.githubusercontent.com/u/56411604?v=4" width="100;" alt="jasmine-9000"/>
+            <br />
+            <sub><b>Jasmine</b></sub>
         </a>
     </td>
     <td align="center">
