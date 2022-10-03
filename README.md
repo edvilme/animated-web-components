@@ -4,41 +4,46 @@
 
 ![Contributors](https://img.shields.io/github/contributors/edvilme/animated-web-components)
 
-
 # Animated Web Components
 
 Content on the web is increasingly _less static_. However adding even simple animations can be repetitive and verbose. This library uses Web Components to provide animations to objects inside a page. Still in development, more will be added soon.
 
 ## How To Use
+
 To clone and run this, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
 
-
 ### Clone this repository
+
 ```bash
 $ git clone https://github.com/edvilme/animated-web-components.git
 ```
 
 ### Go into the repository
+
 ```bash
 $ cd animated-web-components
 ```
 
 ### Install dependencies
+
 ```bash
 $ npm install animated-web-components
 ```
+
 ![NPM Install](img/npm-install.png)
 
 ### Load NPM module in your HTML File
+
 ```html
 <script src="./node_modules/animated-web-components/index.js" type="module">
 ```
+
 ![HTML Script Tage](img/HTML-Script-Tag.png)
 
-
-
 ### Using a Content Delivery Network (CDN)
+
 If you prerfer, you can use [Unpkg.com](https://unpkg.com)
+
 ```html
 <script src="://unpkg.com/animated-web-components/index.js" type="module">
 ```
@@ -49,66 +54,101 @@ If you prerfer, you can use [Unpkg.com](https://unpkg.com)
 
 ## Usage
 
+### 3D Flip Card
+
+A card which flips with a 3D animation to reveal another side.
+
+```html
+<card-3d
+  fronttitle="Hello"
+  frontcontent="
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui velit pariatur a quis, optio modi obcaecati, id eveniet aspernatur porro est laboriosam, exercitationem eius impedit temporibus quas nemo neque at!"
+  backtitle="World"
+  backcontent="
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui velit pariatur a quis, optio modi obcaecati, id eveniet aspernatur porro est laboriosam, exercitationem eius impedit temporibus quas nemo neque at! "
+  frontimage="https://s25.postimg.cc/frbd9towf/cta-2.png"
+  backimage="https://picsum.photos/500"
+  width="20vw"
+  animationenabled="true"
+></card-3d>
+```
+
 ### Bouncing Ball
+
 Use this tag to create a bouncing ball that will bounce forever.
+
 ```html
 <section>
-    <bouncing-ball color="green" radius="20" animation-speed="0.1" animation-enabled="true">
-        <div>
-            
-        </div>
-    </bouncing-ball>
+  <bouncing-ball
+    color="green"
+    radius="20"
+    animation-speed="0.1"
+    animation-enabled="true"
+  >
+    <div></div>
+  </bouncing-ball>
 </section>
 ```
 
 ### Floating Random Thing
+
 Use this tag to make its content float around its parent. Can be set to duplicate on click
+
 ```html
 <section>
-    <floating-random-thing animation-range="20" animation-speed="100" duplicates="true" auto="true">
-        <p>Hello</p>
-    </floating-random-thing>
+  <floating-random-thing
+    animation-range="20"
+    animation-speed="100"
+    duplicates="true"
+    auto="true"
+  >
+    <p>Hello</p>
+  </floating-random-thing>
 </section>
 ```
+
 ![Web-Component-tag](img/web-component-tag.png)
 
 ### Typing element
+
 Use this tag to make a text content appear as if it were being typed.
+
 ```html
 <section>
-    <typing-element animation-speed="0.1" animation-enabled="true">
-        <p>Hello World!</p>
-    </typing-element>
+  <typing-element animation-speed="0.1" animation-enabled="true">
+    <p>Hello World!</p>
+  </typing-element>
 </section>
-
 ```
+
 ![Typing](img/typing-tag.png)
 
 Rich HTML can also be used to display complex content:
+
 ```html
 <section>
-    <typing-element animation-speed="0.1" animation-enabled="true">
-        <div>
-            <h1>Web Technologies</h1>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascrtip</li>
-            </ul>
-        </div>
-    </typing-element>
+  <typing-element animation-speed="0.1" animation-enabled="true">
+    <div>
+      <h1>Web Technologies</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascrtip</li>
+      </ul>
+    </div>
+  </typing-element>
 </section>
 ```
 
 ![Typeing2](img/typing-tag2.png)
-
 
 ## Notes
 
 > Important! Remember that all children must be wrapped in a **single** tag.
 
 ## How to Contribute
-1. Clone repo and create a new branch: 
+
+1. Clone repo and create a new branch:
    ```bash
    $ git checkout https://github.com/edvilme/animated-web-components.git -b name_for_new_branch
    ```
@@ -117,7 +157,7 @@ Rich HTML can also be used to display complex content:
 
 ## License
 
->    GPL-3.0
+> GPL-3.0
 
 ## Contributors
 
