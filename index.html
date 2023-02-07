@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        section{
-            background-color: red;
-            height: 200px;
-            width: 200px;
-        }
+      section {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+      }
     </style>
-    <link href="stylesheet" href="/css/ball.css">
+    <link href="stylesheet" href="/css/ball.css" />
     <script src="./index.js" type="module"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <floating-random-element animation-speed="0.25" animation-enabled="true" >
-            <div style="position: relative;">
-                <div style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;"></div>
-                <p>aaa</p>
-            </div>
-        </floating-random-element>
+      <floating-random-element animation-speed="0.25" animation-enabled="true">
+        <div style="position: relative">
+          <div
+            style="position: absolute; top: 0; left: 0; bottom: 0; right: 0"
+          ></div>
+          <p>aaa</p>
+        </div>
+      </floating-random-element>
     </section>
     <section>
-        <typing-element animation-speed="0.1" animation-enabled="true">
-            <div>
-                <h1>Hello!</h1>
-                <strong>People</strong>
-                <ul>
-                    <li>Hello</li>
-                    <li>I am </li>
-                    <li>A list</li>
-                </ul>
-            </div>
-        </typing-element>
+      <typing-element animation-speed="0.1" animation-enabled="true">
+        <div>
+          <h1>Hello!</h1>
+          <strong>People</strong>
+          <ul>
+            <li>Hello</li>
+            <li>I am</li>
+            <li>A list</li>
+          </ul>
+        </div>
+      </typing-element>
     </section>
     <section>
-        <bouncing-ball color="green" radius="20" animation-speed="0.1" animation-enabled="true">
-            <div>
-                
-            </div>
-        </bouncing-ball>
+      <bouncing-ball
+        color="green"
+        radius="20"
+        animation-speed="0.1"
+        animation-enabled="true"
+      >
+        <div></div>
+      </bouncing-ball>
     </section>
+    <div style="margin-top: 20px">
+      <progress-bar-element
+        progress="80%"
+        animation-speed="0.25"
+        animation-enabled="true"
+        variant="candystriped"
+      ></progress-bar-element>
+    </div>
+    <div style="margin-top: 20px">
+      <progress-bar-element
+        progress="80%"
+        animation-speed="0.25"
+        animation-enabled="true"
+        variant="shiny"
+      ></progress-bar-element>
+    </div>
     <script>
-       window.addEventListener('load', ()=>{
-            document.querySelector('floating-random-element').addClonableEventListener('clone', e=>{
-                console.log(e.detail)
-            })
-        })
+      window.addEventListener("load", () => {
+        document
+          .querySelector("floating-random-element")
+          .addClonableEventListener("clone", (e) => {
+            console.log(e.detail);
+          });
+      });
     </script>
-</body>
+  </body>
 </html>
