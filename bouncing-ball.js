@@ -80,7 +80,7 @@ class BouncingBallElement extends AnimationElement {
          */
         const o_y = parseFloat( this.style.top ) || 0;
         
-        const gravity = 10;
+        const gravity = 40;
         let x, y;
         x = o_x;
         this.yvelocity += gravity;
