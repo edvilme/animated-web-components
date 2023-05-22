@@ -31,11 +31,13 @@ class TextShadowElement extends AnimationElement {
       style.innerHTML = `
         :host {
           display: inline-block;
-          position: relative;
+          position: absolute;
+          width: 100px;
+          height: 100px;
           font-size: 30px;
           top = 0px;
           color: ${this.color || 'white'};
-        transition: ${this.animationSpeed/1000 + 0.2*Math.random()}s linear;
+          transition: ${this.animationSpeed/1000 + 0.2*Math.random()}s linear;
           animation: textShadowAnimation 2s infinite;
         }
         
