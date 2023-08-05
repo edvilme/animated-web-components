@@ -74,5 +74,44 @@
           });
       });
     </script>
+
+    <div class="form-submit">
+      <button type="submit">Sign Up / Login</button>
+    </div>
+    <style>
+      .form-submit button[type="submit"] {
+        padding: 15px 170px;
+        font-weight: 500;
+        font-size: 12px;
+        border-radius: 45px;
+        border: none;
+        outline: none;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        gap: 9px;
+        box-shadow: 0px 8px 15px rgba(1.7, 1.7, 1.7, 1.7);
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+      }
+
+      .form-submit button[type="submit"]:hover {
+        background-color: #23c483;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
+      .form-submit button[type="submit"]:active {
+        transform: translateY(-1px);
+      }
+
+      .form-submit {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
   </body>
 </html>
